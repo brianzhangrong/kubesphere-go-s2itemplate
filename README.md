@@ -81,3 +81,4 @@ s2i build --incremental=true test/test-app nginx-centos7 nginx-app
 ```
 This will run the *save-artifacts* script which includes the custom code to backup the currently running application source, rebuild the application image, and then re-deploy the previously saved source using the *assemble* script.
 # kubesphere-go-s2itemplate
+# kubesphere-go-s2itemplate
