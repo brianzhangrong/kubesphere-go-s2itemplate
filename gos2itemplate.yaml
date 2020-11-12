@@ -1,0 +1,14 @@
+apiVersion: devops.kubesphere.io/v1alpha1
+kind: S2iBuilderTemplate
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+    builder-type.kubesphere.io/s2i: s2i
+  name: go
+spec:
+  codeFramework: go
+  containerInfo:
+  - builderImage: zhangrong1027/go-alpha
+  defaultBaseImage: zhangrong1027/go-alpha
+  version: 0.0.1
+  description: "This is a S2I go builder template go version 1.15"
